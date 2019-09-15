@@ -142,6 +142,89 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-排序算法-二-选择排序" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/12/排序算法-二-选择排序/">排序算法(二)选择排序</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/12/排序算法-二-选择排序/" class="archive-article-date">
+  	<time datetime="2018-07-12T09:29:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h4><p>首先介绍最简单的排序：选择排序，该排序的工作方法是:<br>找到数组中最小的元素，放在第一位，接着找到第二小的元素放在第二位，以此类推，直到数组最后一位<br>为止。具体实现方法也很简单，在外层循环中进行从第一位到最后一位的遍历，之后在内层循环中找到剩下<br>元素中最小值，并与未排序的第一位进行交换。实现方法为：<br><a href="https://github.com/SunDDD/Sort/blob/master/src/com/algorithms/sort/selection/SelectionSort.java" target="_blank" rel="noopener">SelectionSort类</a>中的sort方法. <br></p>
+<h5 id="核心代码"><a href="#核心代码" class="headerlink" title="核心代码"></a>核心代码</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">public static void sort(Comparable[] a) &#123;</span><br><span class="line">    /*将a[]按升序排列*/</span><br><span class="line">    int N = a.length; //数组长度</span><br><span class="line">    for (int i = 0; i &lt; N; i++) &#123;</span><br><span class="line">        /*将a[i]和a[i + 1] ~ a[N - 1]中最小的元素交换 */</span><br><span class="line">        int min = i;  //最小元素索引</span><br><span class="line">        for (int j = i + 1; j &lt; N; j++) &#123;</span><br><span class="line">            if (less(a[j], a[min])) &#123;</span><br><span class="line">                min = j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        exch(a, min ,i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="时间按复杂度"><a href="#时间按复杂度" class="headerlink" title="时间按复杂度"></a>时间按复杂度</h5><p>对于长度为N的数组，易得选择排序大约需要N²/2次比较和N次交换，所以时间复杂度为O(N²)</p>
+        
+          <a class="article-more-a" href="/2018/07/12/排序算法-二-选择排序/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">数据结构</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">排序算法</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-排序算法-一-排序算法模板的建立" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
