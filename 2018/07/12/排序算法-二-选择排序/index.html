@@ -16,12 +16,12 @@
 <meta property="og:site_name" content="Crits的个人博客">
 <meta property="og:description" content="选择排序首先介绍最简单的排序：选择排序，该排序的工作方法是:找到数组中最小的元素，放在第一位，接着找到第二小的元素放在第二位，以此类推，直到数组最后一位为止。具体实现方法也很简单，在外层循环中进行从第一位到最后一位的遍历，之后在内层循环中找到剩下元素中最小值，并与未排序的第一位进行交换。实现方法为：SelectionSort类中的sort方法.  核心代码1234567891011121314pu">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/img/Sort_1/2.png">
-<meta property="og:updated_time" content="2019-09-15T09:46:39.382Z">
+<meta property="og:image" content="http://yoursite.com/img/Sort_1/selection.gif">
+<meta property="og:updated_time" content="2019-09-15T10:21:42.649Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="排序算法(二)选择排序">
 <meta name="twitter:description" content="选择排序首先介绍最简单的排序：选择排序，该排序的工作方法是:找到数组中最小的元素，放在第一位，接着找到第二小的元素放在第二位，以此类推，直到数组最后一位为止。具体实现方法也很简单，在外层循环中进行从第一位到最后一位的遍历，之后在内层循环中找到剩下元素中最小值，并与未排序的第一位进行交换。实现方法为：SelectionSort类中的sort方法.  核心代码1234567891011121314pu">
-<meta name="twitter:image" content="http://yoursite.com/img/Sort_1/2.png">
+<meta name="twitter:image" content="http://yoursite.com/img/Sort_1/selection.gif">
   
     <link rel="alternative" href="/atom.xml" title="Crits的个人博客" type="application/atom+xml">
   
@@ -179,7 +179,7 @@
 <li>数据移动最少。根据实现方法可知，选择排序的数据交换次数与数组的大小是线性关系，即对于长度为N的数组<br>使用选择排序进行排序，交换次数为N，这个性质是其他的排序算法不具备的。</li>
 </ol>
 <h5 id="算法可视化"><a href="#算法可视化" class="headerlink" title="算法可视化"></a>算法可视化</h5><p>以下是20个元素的样本交换示意图，同时该图像的实现过程也在SelectionSort类的主函数中给出。<br>其中红色为两个元素即将进行交换，粉色该元素与自己进行交换，灰色为未参与交换，但需要注意的是<br>灰色元素参与了比较。</p>
-<div align="center"><img src="/img/Sort_1/2.png" width="1200"></div>
+<div align="center"><img src="/img/Sort_1/selection.gif" width="1200"></div>
 
 <hr>
 
